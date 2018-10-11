@@ -1,0 +1,13 @@
+{
+    "name": "resume/user",
+    "description": "package for user data",
+    "license": "cactous",
+    "authors": [
+        {
+            "name": "amit ghadi",
+            "email": "amitaghadi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
