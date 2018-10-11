@@ -15,12 +15,14 @@ class Userdetails extends Model
 			$users = DB::table('user_master')
                     ->where('id', '=', $user_id)
                     ->Where('status','=', 'active')
+                    ->orderBy('name', 'asc')
                     ->get();
             
 		}else{
 			// $users = DB::select('select * from user_master'); 
 			$users = DB::table('user_master')
-                    ->where('status', '=', 'active')                    
+                    ->where('status', '=', 'active') 
+                    ->orderBy('name', 'asc')                   
                     ->get();
              	
 		}		
